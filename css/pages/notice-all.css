@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* 모바일 컨테이너 */
+.mobile-container {
+  width: 375px;
+  margin: 0 auto;
+  background: #f0f0f0;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 8px;
+  border-bottom: 1px solid #d7d7d7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 16px;
+  text-align: center;
+  flex: 1;
+  font-weight: 500;
+}
+
+.back-btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff9500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-img {
+  width: 28px;
+  height: 28px;
+  background-image: url("../../assets/images/lion-face.png");
+  background-size: cover;
+}
+
+.profile-btn i {
+  font-size: 10px;
+  margin-left: 3px;
+  color: #6a6a70;
+}
+
+/* 탭 메뉴(전체/투표/회비내역/출석) */
+.tab-menu {
+  display: flex;
+  padding: 12px 16px;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tab-menu button {
+  padding: 8px 16px;
+  border: none;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.tab-menu button.active {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 공지 리스트 */
+.notice-list {
+  padding: 0 0px;
+}
+
+.notice-item {
+  padding: 18px 18px;
+  border-bottom: 1px solid #eee;
+  background: #ffffff;
+  position: relative; /* 추가: 상대 위치 설정 */
+}
+
+.notice-info {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 180px;
+}
+
+.notice-category {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-right: 180px;
+}
+
+.notice-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  padding-right: 140px;
+}
+
+.notice-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.notice-date {
+  font-size: 12px;
+  color: #999;
+  width: 80px;
+  text-align: right;
+}
+
+.notice-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  min-width: 65px;
+  text-align: center;
+}
+
+.notice-tag.complete {
+  background: #e9e9e9;
+  color: #999;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 45px;
+}
+
+.notice-tag.over {
+  background: #ffffff00;
+  color: #ff1a1a;
+  margin-left: 0;
+}
+
+.tag-normal {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.tag-important {
+  background: #ffe8e8;
+  color: #ff4d4d;
+}
+
+/* 공지 추가(+) 버튼 */
+.floating-btn {
+  position: fixed;
+  bottom: 80px;
+  right: calc((100% - 375px) / 2 + 20px);
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background: #14279b;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 모바일일 때는 100%로 출력되고, 그림자 없게 ! */
+/* 430px 이하일 때로 . */
+@media screen and (max-width: 430px) {
+  .mobile-container {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  /* 하단 네비게이션 width도 수정 */
+  .bottom-nav {
+    width: 100%;
+  }
+
+  /* 플로팅 버튼 위치 조정 */
+  .floating-btn {
+    right: 20px; /* 고정값으로 변경 */
+  }
+}
