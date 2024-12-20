@@ -1,0 +1,54 @@
+/* 기본 스타일 설정 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 375px;
+  height: 60px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 네비게이션 아이템 기본 스타일 */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  color: #d9d9d9;
+  font-size: 12px;
+  transition: color 0.3s ease; 
+}
+
+.nav-item .nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+  opacity: 0.5; 
+  transition: opacity 0.3s ease;
+}
+
+/* 활성화된 네비게이션 아이템 스타일 */
+.nav-item.active {
+  color: #0e207f;
+  font-weight: bold;
+}
+
+.nav-item.active .nav-icon {
+  opacity: 1; 
+}
