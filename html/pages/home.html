@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈</title>
+    <link rel="stylesheet" href="/css/pages/home.css" />
+    <link rel="stylesheet" href="/css/components/navbar.css" />
+    <script src="https://kit.fontawesome.com/c82201de71.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="home-screen">
+      <div class="home-container">
+        <div class="my-calendar">
+          <p class="my-cal-header">나의 캘린더</p>
+          <div class="home-cal"></div>
+        </div>
+
+        <div class="check-list">
+          <p class="check-list-header">체크리스트</p>
+          <div class="items">
+            <div class="club-name">멋쟁이사자처럼</div>
+            <div><img class="rec1" src="/assets/icons/rectangle1.svg" /></div>
+            <div>회식비 10000원 납부</div>
+            <div><img src="/assets/icons/Forth.svg" /></div>
+          </div>
+          <div class="items">
+            <div class="club-name">멋쟁이사자처럼</div>
+            <div><img class="rec1" src="/assets/icons/rectangle1.svg" /></div>
+            <div>기획/디자인 부서 스터디</div>
+            <div><img src="/assets/icons/Forth.svg" /></div>
+          </div>
+          <div class="items">
+            <div class="club-name">멋쟁이사자처럼</div>
+            <div><img class="rec1" src="/assets/icons/rectangle1.svg" /></div>
+            <div>교내 해커톤 아이디어 선정</div>
+            <div><img src="/assets/icons/Forth.svg" /></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 네비게이션 바 -->
+      <nav class="navbar">
+        <!-- 홈 -->
+        <a href="/html/pages/home.html" class="nav-item">
+          <img src="/assets/icons/home-icon-clicked.svg" alt="홈" class="nav-icon" />
+          <span class="nav-text">홈</span>
+        </a>
+        <!-- 동아리 -->
+        <a href="#" class="nav-item">
+          <img src="/assets/icons/club-icon.svg" alt="동아리" class="nav-icon" />
+          <span class="nav-text">동아리</span>
+        </a>
+        <!-- 스뮤니온 -->
+        <a href="#" class="nav-item">
+          <img src="/assets/icons/smunion-icon.svg" alt="스뮤니온" class="nav-icon" />
+          <span class="nav-text">스뮤니온</span>
+        </a>
+        <!-- 마이페이지 -->
+        <a href="/html/pages/mypage.html" class="nav-item">
+          <img src="/assets/icons/mypage-icon.svg" alt="마이페이지" class="nav-icon" />
+          <span class="nav-text">마이페이지</span>
+        </a>
+      </nav>
+    </div>
+
+    <script>
+      const navItems = document.querySelectorAll(".nav-item");
+      navItems.forEach((item) => {
+        if (item.href === window.location.href) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
