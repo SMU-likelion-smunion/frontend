@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>community</title>
+  <link rel="stylesheet" href="../../css/pages/community.css" />
+
+</head>
+
+<body>
+  <div class="mobile-container">
+    <header class="header">
+      <p class="SMU">SMUNION</p>
+      <img src="../../assets/images/lion-face.png" class="clubImg">
+      <img src="../../assets/icons/vector.png" class="vector">
+    </header>
+    <main class="main">
+      <div class="post">
+        <div class="post_title">
+          <img src="../../assets/images/lion-face.png" class="clubImgInTitle">
+          <p>멋쟁이사자처럼</p> | <p>기획/디자인</p> |
+          <p>김준서</p>
+          <img src="../../assets/icons/dotThree.png" class="dotThree">
+        </div>
+        <img class="runningImg" src="../../assets/images/running.png">
+        <div class="dots">
+          <img src="../../assets/icons/dot.png" class="dot">
+          <img src="../../assets/icons/dot.png" class="dot">
+          <img src="../../assets/icons/dot.png" class="dot">
+          <img src="../../assets/icons/dot.png" class="dot">
+        </div>
+        <hr>
+        <div class="reactbar">
+          <img src="../../assets/icons/heart.png"class="heart">
+          <p class="heartNum">44</p>
+          <img src="../../assets/icons/comment.png"class="comment">
+          <p class="commentNum">2</p>
+        </div>
+        <hr>
+        <p class="contentTitle">런닝 협업</p>
+        <p class="content">런닝을 통해 친해지기!</p>
+        <hr>
+      </div>
+    </main>
+    <main class="main">
+      <div class="post">
+        <div class="post_title">
+          <img src="../../assets/images/lion-face.png" class="clubImgInTitle">
+          <p>멋쟁이사자처럼</p> | <p>기획/디자인</p> |
+          <p>김준서</p>
+          <img src="../../assets/icons/dotThree.png" class="dotThree">
+        </div>
+        <img class="runningImg" src="../../assets/images/running.png">
+        <div class="dots">
+          <img src="../../assets/icons/dot.png" class="dot">
+          <img src="../../assets/icons/dot.png" class="dot">
+          <img src="../../assets/icons/dot.png" class="dot">
+          <img src="../../assets/icons/dot.png" class="dot">
+        </div>
+        <hr>
+        <div class="reactbar">
+          <img src="../../assets/icons/heart.png"class="heart">
+          <p class="heartNum">44</p>
+          <img src="../../assets/icons/comment.png"class="comment">
+          <p class="commentNum">2</p>
+        </div>
+        <hr>
+        <p class="contentTitle">런닝 협업</p>
+        <p class="content">런닝을 통해 친해지기!</p>
+        <hr>
+      </div>
+    </main>
+    <div id="navbar-container"></div>
+    <script>
+      // 네비바를 동적으로 불러오기
+      fetch('../../html/components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Error loading navbar:', error);
+        });
+    </script>
+
+
+  </div>
+</body>
+
+</html>
