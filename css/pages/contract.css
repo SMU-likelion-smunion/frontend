@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.contract-container {
+    position: relative;
+    width: 375px;
+    height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn-container {
+    height: 45px;
+    background-color: #d9d9d940;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contract-content-container{
+    padding: 20px;
+}
+
+.content-box {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    height: 370px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 15px;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.next-btn-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.next-btn {
+    width: 40%;
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    background-color: #d9d9d9;
+    cursor: not-allowed;
+}
+
+.next-btn.active {
+    background-color: #0e207f;
+    cursor: pointer;
+}
