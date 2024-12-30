@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYPAGE</title>
+    <link rel="stylesheet" href="../../css/components/navbar.css">
+    <link rel="stylesheet" href="../../css/pages/mypage.css">
+</head>
+<header data-include-path="../../html/components/navbar.html"></header>
+
+<body>
+    <!-- 마이페이지 컨테이너 -->
+    <div class="mypage-container">
+        <div class="mypage-title">
+            마이페이지
+        </div>
+      <!-- 프로필 컨테이너 -->
+      <div class="profile-container">
+        <div class="profile-image">
+          <img
+            src="../../assets/images/profile-image.png"
+            alt="프로필 이미지"
+            class="profile-img"
+          />
+          <button class="edit-profile-btn">+</button>
+        </div>
+        <div class="profile-info">
+          <h1 class="profile-name">이름</h1>
+          <p class="profile-major">학부/전공</p>
+          <p class="profile-sno">학번</p>
+        </div>
+      </div>
+
+      <!-- 나의 동아리 컨테이너 -->
+      <div class="myclub-container">
+        <div class="myclub-title">나의 동아리</div>
+        <div class="myclub-list">
+          <div class="myclub-card">멋쟁이사자처럼</div>
+          <div class="myclub-card">멋쟁이사자처럼</div>
+          <div class="myclub-card">멋쟁이사자처럼</div>
+        </div>
+        <!-- <div class="myclub-indicators">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div> -->
+      </div>
+
+      <!-- 동아리 탈퇴 요청 -->
+      <div class="request-container">
+          <p class="club-nickname">Caesar</p>
+          <button class="leave-club-request">동아리 탈퇴 요청</button>
+      </div>
+
+      <!-- 설정 섹션 -->
+      <div class="settings-title">설정</div>
+      <div class="settings-container">
+        <div class="settings-list">
+          <div class="change-pw">
+            <a href="#">비밀번호 변경</a>
+          </div>
+          <div class="logout">
+            <a href="#">로그아웃</a>
+          </div>
+          <div class="delete-account">
+            <a href="#">계정 탈퇴</a>
+          </div>
+        </div>
+      </sectionDIV>
+    </div>
+  </body>
+<script src="../../js/mypage.js"></script>
+</html>
