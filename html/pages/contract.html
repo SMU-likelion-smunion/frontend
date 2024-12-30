@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이용약관</title>
+    <link rel="stylesheet" href="../../css/pages/contract.css">
+    <link rel="stylesheet" href="../../css/components/navbar.css">
+</head>
+<header data-include-path="../../html/components/navbar.html"></header>
+<body>
+    <div class="contract-container">
+        <div class="back-btn-container"> <a href="#" class="back-btn"><img src="../../assets/icons/back-btn.svg" alt=""></a></div>
+        <div class="title">이용약관</div>
+        <div class="contract-content-container">
+            <div class="content-box">스뮤니온 이용약관</div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree-checkbox">
+                <label for="agree-checkbox">이용약관에 동의합니다</label>
+            </div>
+        </div>
+        <div class="next-btn-container">
+         <button id="next-btn" class="next-btn" disabled>다음</button>
+        </div>
+    </div>
+    <script>
+        const checkbox = document.getElementById('agree-checkbox');
+        const button = document.getElementById('next-btn');
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                button.disabled = false;
+                button.classList.add('active');
+            } else {
+                button.disabled = true;
+                button.classList.remove('active');
+            }
+        });
+
+        // include.js
+window.addEventListener("load", function () {
+    var allElements = document.getElementsByTagName("*");
+    Array.prototype.forEach.call(allElements, function (el) {
+      var includePath = el.dataset.includePath;
+      if (includePath) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            el.outerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", includePath, true);
+        xhttp.send();
+      }
+    });
+  });
+    </script>
+</body>
+</html>
