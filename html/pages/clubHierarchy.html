@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>clubHierarchy</title>
   <link rel="stylesheet" href="../../css/pages/clubHierarchy.css" />
-
+  <script src="../../js/pages/clubHierarchy.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
     <main class="main">
       <div class="reviseBtn">
-        <p>뒤로가기</p>
+        <p class="backBtn">뒤로가기</p>
         <div>
           <button>초대</button>
           <button>편집</button>
@@ -31,23 +31,93 @@
 
       <div class="clubInfo">
         <h3>멋쟁이사자처럼</h3>
+
         <p class="clubMemberNum">총 43명</p>
         <p class="detail">Hello...</p>
       </div>
       <hr>
       <div class="clubDept">
         <p>기획/디자인</p>
-        <img src="../../assets/icons/vector.png">
+        <img src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
+      </div>
+      <div class="memberInfo" style="display: none; flex-direction: column;">
+        <hr>
+        <div class="userBox">
+          <img src="../../assets/images/user_1.png">
+          <p>caesar</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox">
+          <img src="../../assets/images/user_2.png">
+          <p>apollo</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox"><img src="../../assets/images/user_3.png">
+          <p>steve</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox"><img src="../../assets/images/user_4.png">
+          <p>ocean</p>
+        </div>
+
+
+
       </div>
       <hr>
       <div class="clubDept">
         <p>프론트엔드</p>
-        <img src="../../assets/icons/vector.png">
+        <img src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
+      </div>
+      <div class="memberInfo" style="display: none; flex-direction: column;">
+        <hr>
+        <div class="userBox">
+          <img src="../../assets/images/user_1.png">
+          <p>caesar</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox">
+          <img src="../../assets/images/user_2.png">
+          <p>apollo</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox"><img src="../../assets/images/user_3.png">
+          <p>steve</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox"><img src="../../assets/images/user_4.png">
+          <p>ocean</p>
+        </div>
+
+
+
       </div>
       <hr>
       <div class="clubDept">
         <p>벡앤드</p>
-        <img src="../../assets/icons/vector.png">
+        <img src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
+      </div>
+      <div class="memberInfo" style="display: none; flex-direction: column;">
+        <hr>
+        <div class="userBox">
+          <img src="../../assets/images/user_1.png">
+          <p>caesar</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox">
+          <img src="../../assets/images/user_2.png">
+          <p>apollo</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox"><img src="../../assets/images/user_3.png">
+          <p>steve</p>
+        </div>
+        <hr style="margin-left: 30px;">
+        <div class="userBox"><img src="../../assets/images/user_4.png">
+          <p>ocean</p>
+        </div>
+
+
+
       </div>
       <hr>
 

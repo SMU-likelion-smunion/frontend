@@ -91,5 +91,17 @@ hr {
 }
 img{
   margin-right: 10px;
-  
+}
+img:not(.clubPic):hover,button,.backBtn{
+cursor: pointer;
+}
+.memberInfo img{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  margin-left: 35px;
+}
+.userBox{
+  align-items: center; /* 세로 중앙 정렬 */
+  display: flex;
 }
