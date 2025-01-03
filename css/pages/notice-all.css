@@ -17,7 +17,7 @@ body {
 .mobile-container {
   width: 375px;
   margin: 0 auto;
-  background: #f0f0f0;
+  background: #f2f2f7;
   flex: 1;
   min-height: 100vh;
   position: relative;
