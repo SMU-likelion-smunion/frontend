@@ -1,80 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f2f2f7;
-  }
-  
-/*팝업 배경*/
-/* display: none; 평소에는 보이지 않도록 */
-.mypage-alert-container {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 375px;
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  
-  .mypage-alert-wrap {
-    /*팝업*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* padding: 25px; */
-    background: #DBDBDB;
-    border-radius: 8px;
-    width: 210px;
-    height: 130px;
-    /* margin-bottom: 50px; */
-  }
-  
-  .mypage-alert-msg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    height: 65%;
-    border-bottom: 1px solid #383A3D80;;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .mypage-alert-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 35%;
-  }
+body {
+  background-color: #f2f2f7;
+}
+
+/*팝업 배경*/
+.mypage-alert-container {
+  display: none; /*평소에는 보이지 않도록 */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 375px;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.mypage-alert-wrap {
+  /*팝업*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 25px; */
+  background: #dbdbdb;
+  border-radius: 8px;
+  width: 210px;
+  height: 130px;
+  /* margin-bottom: 50px; */
+}
+
+.mypage-alert-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  height: 65%;
+  border-bottom: 1px solid #383a3d80;
+}
+
+.mypage-alert-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35%;
+}
 
 .cancel,
 .request {
-    flex: 1; /* 균등 분배 */
-    height: 100%;
-    border: none;
-    background: none;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
-    line-height: 50px; /* 버튼 높이와 동일 */
+  flex: 1; /* 균등 분배 */
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  line-height: 50px; /* 버튼 높이와 동일 */
 }
 
-  .cancel {
-    border-right: 1px solid #383A3D80;
-    cursor: pointer;
-  }
+.cancel {
+  border-right: 1px solid #383a3d80;
+  cursor: pointer;
+}
 
-  .request {
-    color: red;
-    cursor: pointer;
-  }
+.request {
+  color: red;
+  cursor: pointer;
+}
 
-  
-  .cancel:hover, .request:hover {
-    background-color: #383A3D20;
-  }
-  
+.cancel:hover,
+.request:hover {
+  background-color: #383a3d20;
+}
