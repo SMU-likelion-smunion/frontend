@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MYPAGE</title>
-    <link rel="stylesheet" href="../../css/components/navbar.css">
-    <link rel="stylesheet" href="../../css/pages/mypage.css">
-</head>
-<header data-include-path="../../html/components/navbar.html"></header>
+    <link rel="stylesheet" href="../../css/components/navbar.css" />
+    <link rel="stylesheet" href="../../css/pages/mypage.css" />
+    <link rel="stylesheet" href="../../css/pages/mypage-alert.css" />
+    <script
+      src="https://kit.fontawesome.com/c82201de71.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- <header data-include-path="../../html/components/navbar.html"></header> -->
 
-<body>
+  <body>
     <!-- 마이페이지 컨테이너 -->
     <div class="mypage-container">
-        <div class="mypage-title">
-            마이페이지
-        </div>
+      <div class="mypage-title">마이페이지</div>
       <!-- 프로필 컨테이너 -->
       <div class="profile-container">
         <div class="profile-image">
@@ -49,8 +52,8 @@
 
       <!-- 동아리 탈퇴 요청 -->
       <div class="request-container">
-          <p class="club-nickname">Caesar</p>
-          <button class="leave-club-request">동아리 탈퇴 요청</button>
+        <p class="club-nickname">Caesar</p>
+        <button class="leave-club-request">동아리 탈퇴 요청</button>
       </div>
 
       <!-- 설정 섹션 -->
@@ -67,8 +70,85 @@
             <a href="#">계정 탈퇴</a>
           </div>
         </div>
-      </sectionDIV>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav class="navbar">
+        <!-- 홈 -->
+        <a href="/html/pages/home.html" class="nav-item">
+          <img src="/assets/icons/home-icon.svg" alt="홈" class="nav-icon" />
+          <span class="nav-text">홈</span>
+        </a>
+        <!-- 동아리 -->
+        <a href="/html/pages/club-main.html" class="nav-item">
+          <img
+            src="/assets/icons/club-icon.svg"
+            alt="동아리"
+            class="nav-icon"
+          />
+          <span class="nav-text">동아리</span>
+        </a>
+        <!-- 스뮤니온 -->
+        <a href="/html/pages/community.html" class="nav-item">
+          <img
+            src="/assets/icons/smunion-icon.svg"
+            alt="스뮤니온"
+            class="nav-icon"
+          />
+          <span class="nav-text">스뮤니온</span>
+        </a>
+        <!-- 마이페이지 -->
+        <a href="/html/pages/mypage.html" class="nav-item">
+          <img
+            src="/assets/icons/mypage-icon.svg"
+            alt="마이페이지"
+            class="nav-icon"
+          />
+          <span class="nav-text">마이페이지</span>
+        </a>
+      </nav>
     </div>
+
+    <div class="mypage-alert-container">
+      <div class="mypage-alert-wrap">
+          <div class="mypage-alert-msg">정말로 탈퇴하시겠습니까?</div>
+          <div class="mypage-alert-btn">
+            <button type="button" class="cancel">
+              &nbsp;&nbsp;취소&nbsp;&nbsp;
+            </button>
+            <button type="button" class="request">
+              탈퇴 요청
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // const navItems = document.querySelectorAll(".nav-item");
+      // navItems.forEach((item) => {
+      //   if (item.href === window.location.href) {
+      //     item.classList.add("active");
+      //   } else {
+      //     item.classList.remove("active");
+      //   }
+      // });
+
+      const navItems = document.querySelectorAll(".nav-item");
+
+      navItems.forEach((item) => {
+        const icon = item.querySelector(".nav-icon");
+        const defaultSrc = icon.getAttribute("src"); // 기본 아이콘 경로
+        const activeSrc = defaultSrc.replace(".svg", "-clicked.svg"); // 활성화된 아이콘 경로
+
+        if (item.href === window.location.href) {
+          item.classList.add("active");
+          icon.src = activeSrc; // 활성화된 아이콘 경로로 변경
+        } else {
+          item.classList.remove("active");
+          icon.src = defaultSrc; // 기본 아이콘 경로로 복구
+        }
+      });
+    </script>
+    <script src="../../js/mypage.js"></script>
   </body>
-<script src="../../js/mypage.js"></script>
 </html>
