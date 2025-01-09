@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: white;
+  overflow: hidden;
+}
+
+.full-cal-screen {
+  width: 375px;
+  height: 100vh;
+  background-color: #f2f2f7;
+  overflow-y: auto;
+}
+
+.full-cal-container {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+/* 헤더 */
+
+.full-cal-header {
+  position: fixed;
+  width: 375px;
+  height: 44px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  border-top: 0.4px solid #d9d9d9;
+  border-bottom: 0.4px solid #d9d9d9;
+  background-color: #f2f2f7;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.full-cal-header div {
+  display: flex;
+}
+
+.full-cal-header div:nth-child(2) {
+  margin-left: 135px;
+  font-size: 14px;
+}
+
+.full-cal-header div:nth-child(3) {
+  margin-left: auto;
+  width: 38px;
+  margin-right: 5px;
+}
+
+.full-cal-header div:nth-child(1),
+.full-cal-header div:nth-child(3),
+.full-cal-header div:nth-child(4) {
+  cursor: pointer;
+}
+
+/* 캘린더 calendar.css */
+.full-cal-main {
+  margin: 0px 24px 25px 24px;
+}
+
+/* 공지 추가 */
+.add-notice {
+  width: 327px;
+  height: 30px;
+  background-color: #ffffff;
+  display: flex;
+  color: #0e207f;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-notice img {
+  width: 12px;
+  height: 12px;
+  margin-left: 13px;
+  margin-right: 12px;
+}
+
+/* 선택 날짜 공지 보기 */
+.view-notice-items {
+  width: 327px;
+  height: 32px;
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  font-size: 13px;
+  padding-left: 13px;
+  border-top: 1px solid #d9d9d9;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.view-notice-items img:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.view-notice-items img:nth-child(4) {
+  margin-left: auto;
+}
+
+.view-notice-items p:nth-child(1) {
+  color: #6a6a70;
+}
