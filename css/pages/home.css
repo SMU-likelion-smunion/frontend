@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Pretendard";
 }
 
 body {
@@ -42,7 +43,7 @@ body {
 
 .home-cal {
   width: 327px;
-  height: 210px;
+  height: 207px;
   border-radius: 8px;
   background-color: #ffffff;
   font-size: 20px;
