@@ -36,8 +36,14 @@
   font-weight: 500;
 }
 
-.cal-top button:nth-child(2) {
+.cal-top img {
+  width: 6px;
+  cursor: pointer;
+}
+
+.cal-top img:nth-child(2) {
   margin-left: 140px;
+  margin-right: 10px;
 }
 
 .cal-days {
