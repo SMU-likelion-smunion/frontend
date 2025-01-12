@@ -11,3 +11,8 @@ function deptMemSee(imgElement) {
     }
   }
 }
+
+document.getElementById('reviseBtn').onclick=function(){
+  var deptAdd=document.getElementById('deptAdd');
+  deptAdd.style.display='block'
+}

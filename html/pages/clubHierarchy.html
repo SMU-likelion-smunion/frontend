@@ -20,7 +20,7 @@
         <p class="backBtn">뒤로가기</p>
         <div>
           <button>초대</button>
-          <button>편집</button>
+          <button id ='reviseBtn'>편집</button>
         </div>
 
       </div>
@@ -35,27 +35,31 @@
         <p class="clubMemberNum">총 43명</p>
         <p class="detail">Hello...</p>
       </div>
+      <button id="deptAdd" class="deptAdd">부서 추가</button>
       <hr>
+
       <div class="clubDept">
         <p>기획/디자인</p>
-        <img src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
+        <img class=vector src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
       </div>
+
       <div class="memberInfo" style="display: none; flex-direction: column;">
-        <hr>
+        <hr class="bottom">
         <div class="userBox">
+          <img style="width: 20px; height: 20px;" src="../../assets/icons/deleteBtn.png">
           <img src="../../assets/images/user_1.png">
           <p>caesar</p>
         </div>
-        <hr style="margin-left: 30px;">
+        <hr>
         <div class="userBox">
           <img src="../../assets/images/user_2.png">
           <p>apollo</p>
         </div>
-        <hr style="margin-left: 30px;">
+        <hr style="margin-left: 10px;">
         <div class="userBox"><img src="../../assets/images/user_3.png">
           <p>steve</p>
         </div>
-        <hr style="margin-left: 30px;">
+        <hr style="margin-left: 10px;">
         <div class="userBox"><img src="../../assets/images/user_4.png">
           <p>ocean</p>
         </div>
@@ -63,10 +67,12 @@
 
 
       </div>
+
+
       <hr>
       <div class="clubDept">
         <p>프론트엔드</p>
-        <img src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
+        <img class="vector" src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
       </div>
       <div class="memberInfo" style="display: none; flex-direction: column;">
         <hr>
@@ -94,7 +100,7 @@
       <hr>
       <div class="clubDept">
         <p>벡앤드</p>
-        <img src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
+        <img  class=vector src="../../assets/icons/vector.png" onclick=deptMemSee(this);>
       </div>
       <div class="memberInfo" style="display: none; flex-direction: column;">
         <hr>

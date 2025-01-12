@@ -89,19 +89,32 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-img{
+.vector{
   margin-right: 10px;
 }
 img:not(.clubPic):hover,button,.backBtn{
 cursor: pointer;
 }
+.memberInfo:not(.bottom){
+margin-left: 30px;
+}
+hr.bottom {
+  margin-left: 0; /* hr 요소에 따로 스타일 설정 */
+}
 .memberInfo img{
   width: 30px;
   height: 30px;
   margin: 5px;
-  margin-left: 35px;
 }
 .userBox{
   align-items: center; /* 세로 중앙 정렬 */
   display: flex;
+}
+.deptAdd{
+  background-color: #0E207F;
+  color: white;
+  padding: 6px 18px;
+  margin: 10px;
+  border-radius: 20px;
+  display: none;
 }

@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
 body {
   background-color: #ffffff;
 }
@@ -36,7 +35,7 @@ header {
   align-items: center;
   background-color: white;
   width: 375px;
-  padding: 5px;
+  padding: 10px;
   font-weight: bold;
   font-size: small ;
 }
@@ -45,7 +44,9 @@ button{
   border: none;
   color: rgb(19, 19, 162);
   font-weight: bold;
-
+}
+button:hover{
+  cursor: pointer;
 }
 
 .dots{
@@ -89,10 +90,13 @@ hr{
   width: 170px;
   height: 170px;
   background-color: rgb(244, 244, 244);
-  border-radius: 20px;
+  border-radius: 15px;
   margin: 0 auto; /* 수평 중앙 정렬 */
   margin-top: 50px;
 }
 .createBtn{
   width: 40px;
+}
+.createBtn:hover{
+  cursor: pointer;
 }
