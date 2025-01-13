@@ -39,7 +39,9 @@ button {
   color: rgb(0, 0, 143);
   font-weight: bolder;
 }
-
+button:hover{
+  cursor: pointer;
+}
 .main {
   display: flex;
   flex-wrap: wrap;
