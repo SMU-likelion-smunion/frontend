@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>학생 인증</title>
-    <link rel="stylesheet" href="../../css/pages/sign-up.css">
-    <link rel="stylesheet" href="../../css/components/navbar.css">
-</head>
-<header data-include-path="../../html/components/navbar.html"></header>
-<body>
+    <link rel="stylesheet" href="../../css/pages/sign-up.css" />
+    <link rel="stylesheet" href="../../css/components/navbar.css" />
+  </head>
+  <body>
     <div class="sign-up-container">
-        <div class="back-btn-container"> <a href="#" class="back-btn"><img src="../../assets/icons/back-btn.svg" alt=""></a></div>
-        <div class="sign-up-title">학생인증</div>
-        <div class="sign-up-form-container">
-        <input type="text" class="input-box-id" placeholder="학번을 입력해주세요">
-        <input type="password" class="input-box-pw" placeholder="샘물 비밀번호">
-        <button class="submit-button">가입</button>
+      <div class="back-btn-container">
+        <a href="../pages/login.html" class="back-btn"
+          ><img src="../../assets/icons/back-btn.svg" alt=""
+        /></a>
+      </div>
+      <div class="sign-up-title">학생 인증</div>
+      <div class="sign-up-form-container">
+        <input type="email" class="input-box" id="email" placeholder="이메일" />
+        <input type="text" class="input-box" id="major" placeholder="학과" />
+        <input type="text" class="input-box" id="name" placeholder="이름" />
+        <input
+          type="password"
+          class="input-box"
+          id="pw"
+          placeholder="비밀번호"
+        />
+        <input
+          type="password"
+          class="input-box"
+          id="pw-check"
+          placeholder="비밀번호 확인"
+        />
+        <button id="submit-button" class="submit-button">완료</button>
+      </div>
+      <div class="error-message">*비밀번호가 틀렸습니다.</div>
     </div>
-    </div>
-</body>
-<script src="../../js/sign-up.js"></script>
+  </body>
+  <script src="../../js/sign-up.js"></script>
 </html>
