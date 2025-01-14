@@ -81,3 +81,6 @@ p {
   padding: 8px 23px;
   border-radius: 10px;
 }
+.inviteBtn:hover {
+  background-color: #205688;
+}
