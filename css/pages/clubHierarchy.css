@@ -67,6 +67,41 @@ button {
   width: 80px; height: 80px; 
   display: none;
 }
+.modal-overlay{
+position: absolute; /* 절대 위치 */
+top: 46%; /* 세로 중앙 */
+left: 50%; /* 가로 중앙 */
+transform: translate(-50%, -50%); /* 정확히 중앙에 위치시키기 위한 보정 */
+z-index: 10; /* add-btn이 clubPic 위로 보이게 */
+width: 200px; height: 90px; 
+background-color:#f7f7f7;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 13px;
+}
+.modal p {
+  margin: 0 ;
+text-align: center;
+color: black;
+}
+.modalBtn{
+display: flex;
+justify-content: space-between;
+padding-top: 15px;
+}
+.cancel-delete{
+  color: black;
+  font-weight: 100;
+  padding-right: 30px;
+}
+.confirm-delete{
+color: red;
+font-weight: 100;
+padding-left: 50px;
+}
 button {
   margin-right: 10px;
 }
@@ -103,8 +138,8 @@ hr {
   align-items: center;
   margin-left: 5px;
 }
-.vector {
-  margin-right: 10px;
+.vector ,.starBtn,.checked_starBtn{
+  margin: 5px 10px;
 }
 
 img:not(.clubPic):hover,
