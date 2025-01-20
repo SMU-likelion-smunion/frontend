@@ -19,10 +19,6 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px; */
 }
 
 .back-btn-container {
@@ -39,10 +35,13 @@ body {
   color: black;
 }
 
-.sign-up-title {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 90px 0 15px;
+.login-title {
+  margin-top: 100px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6a6a70;
 }
 
 .sign-up-form-container {
@@ -56,32 +55,69 @@ body {
   width: 100%;
   padding: 13px;
   font-size: 16px;
-  color: #9f9f9f;
-  border: 1px solid #b6b6b6;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid #ddd;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+input::placeholder {
+  color: #d9d9d9;
 }
 
 #email {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  border-radius: 8px 8px 0 0; /* 위쪽만 둥글게 */
+}
+
+#verification-code {
+  margin-top: 0;
+  padding-left: 20px;
+  border-top: none; /* 두 번째 입력창의 위쪽 테두리 제거 */
+  border-radius: 0 0 8px 8px; /* 아래쪽만 둥글게 */
+}
+
+#major {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  border-radius: 8px 8px 0 0; /* 위쪽만 둥글게 */
 }
 
 #name {
   margin-bottom: 20px;
+  padding-left: 20px;
+  border-top: none; /* 두 번째 입력창의 위쪽 테두리 제거 */
+  border-radius: 0 0 8px 8px; /* 아래쪽만 둥글게 */
+}
+
+#pw {
+  margin-bottom: 0;
+  padding-left: 20px;
+  border-radius: 8px 8px 0 0; /* 위쪽만 둥글게 */
+}
+
+#pw-check {
+  margin-top: 0;
+  padding-left: 20px;
+  border-top: none; /* 두 번째 입력창의 위쪽 테두리 제거 */
+  border-radius: 0 0 8px 8px; /* 아래쪽만 둥글게 */
+}
+
+.error-message {
+  margin-top: 5px;
 }
 
 .submit-button {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   background-color: #0e207f;
   color: white;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 14px;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .submit-button:hover {
@@ -89,7 +125,48 @@ body {
 }
 
 .error-message {
-  font-size: 14px;
   color: red;
-  text-align: center;
+  font-size: 0.8em;
+  display: none;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+}
+
+.send-code-btn {
+  margin-left: 5px;
+  padding: 6.5px;
+  font-size: 13px;
+  color: white;
+  background-color: #0e207f;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.send-code-btn:hover {
+  background-color: #002bb8;
+}
+
+.verification-container {
+  display: flex;
+  align-items: center;
+}
+
+.verify-btn {
+  margin-left: 5px;
+  padding: 13px 20.5px;
+  font-size: 15px;
+  color: white;
+  background-color: #0e207f;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.verify-btn:hover {
+  background-color: #002bb8;
 }

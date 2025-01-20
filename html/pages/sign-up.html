@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>학생 인증</title>
     <link rel="stylesheet" href="../../css/pages/sign-up.css" />
-    <link rel="stylesheet" href="../../css/components/navbar.css" />
   </head>
   <body>
     <div class="sign-up-container">
@@ -14,11 +13,39 @@
           ><img src="../../assets/icons/back-btn.svg" alt=""
         /></a>
       </div>
-      <div class="sign-up-title">학생 인증</div>
+      <div class="login-title">
+        <h2 class="subtitle">상명대학교 동아리 서비스</h2>
+        <h1 class="title">
+          <img src="../../assets/icons/smunion.svg" alt="" />
+        </h1>
+      </div>
       <div class="sign-up-form-container">
-        <input type="email" class="input-box" id="email" placeholder="이메일" />
+        <div class="email-container">
+          <input
+            type="email"
+            class="input-box"
+            id="email"
+            placeholder="이메일"
+          />
+          <button class="send-code-btn">인증번호 전송</button>
+        </div>
+        <div class="error-message email-error"></div>
+
+        <div class="verification-container">
+          <input
+            type="text"
+            class="input-box"
+            id="verification-code"
+            placeholder="인증번호 입력"
+          />
+          <button class="verify-btn">확인</button>
+        </div>
+
         <input type="text" class="input-box" id="major" placeholder="학과" />
         <input type="text" class="input-box" id="name" placeholder="이름" />
+        <div class="error-message major-error"></div>
+        <div class="error-message name-error"></div>
+
         <input
           type="password"
           class="input-box"
@@ -31,10 +58,11 @@
           id="pw-check"
           placeholder="비밀번호 확인"
         />
+        <div class="error-message password-error"></div>
+
         <button id="submit-button" class="submit-button">완료</button>
       </div>
-      <div class="error-message">*비밀번호가 틀렸습니다.</div>
     </div>
   </body>
-  <script src="../../js/sign-up.js"></script>
+  <script src="../../js/pages/sign-up.js"></script>
 </html>

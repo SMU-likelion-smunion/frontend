@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.new-pw-container {
+  position: relative;
+  width: 375px;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; */
+}
+
+.back-btn-container {
+  height: 45px;
+  background-color: #d9d9d940;
+}
+
+.back-btn {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.login-title {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6a6a70;
+}
+
+.new-pw-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 0.5px solid #ddd;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+#new-pw {
+  padding-left: 20px;
+  border-radius: 8px 8px 0 0; /* 위쪽만 둥글게 */
+}
+
+#new-pw-check {
+  padding-left: 20px;
+  border-top: none; /* 두 번째 입력창의 위쪽 테두리 제거 */
+  border-radius: 0 0 8px 8px; /* 아래쪽만 둥글게 */
+}
+
+input::placeholder {
+  color: #d9d9d9;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0e207f;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.submit-btn:hover {
+  background-color: #002bb8;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
