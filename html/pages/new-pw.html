@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비밀번호 찾기</title>
+    <link rel="stylesheet" href="../../css/pages/new-pw.css" />
+  </head>
+  <body>
+    <div class="new-pw-container">
+      <div class="back-btn-container">
+        <a href="../pages/login.html" class="back-btn"
+          ><img src="../../assets/icons/back-btn.svg" alt=""
+        /></a>
+      </div>
+      <div class="login-title">
+        <h2 class="subtitle">상명대학교 동아리 서비스</h2>
+        <h1 class="title">
+          <img src="../../assets/icons/smunion.svg" alt="" />
+        </h1>
+      </div>
+      <div class="new-pw-form-container">
+        <input
+          type="text"
+          class="input-box"
+          id="new-pw"
+          placeholder="새로운 비밀번호"
+        />
+        <input
+          type="text"
+          class="input-box"
+          id="new-pw-check"
+          placeholder="비밀번호 확인"
+        />
+        <button
+          id="submit-btn"
+          class="submit-btn"
+          onclick="location.href='../../html/pages/login.html'"
+        >
+          완료
+        </button>
+      </div>
+      <div class="error-message">*비밀번호가 틀렸습니다.</div>
+    </div>
+  </body>
+</html>
