@@ -22,15 +22,13 @@
       <div class="sign-up-form-container">
         <div class="email-container">
           <input
-            type="email"
+            type="text"
             class="input-box"
             id="email"
             placeholder="이메일"
           />
           <button class="send-code-btn">인증번호 전송</button>
         </div>
-        <div class="error-message email-error"></div>
-
         <div class="verification-container">
           <input
             type="text"
@@ -40,26 +38,29 @@
           />
           <button class="verify-btn">확인</button>
         </div>
+        <div class="error-message email-error"></div>
 
-        <input type="text" class="input-box" id="major" placeholder="학과" />
-        <input type="text" class="input-box" id="name" placeholder="이름" />
-        <div class="error-message major-error"></div>
-        <div class="error-message name-error"></div>
-
-        <input
-          type="password"
-          class="input-box"
-          id="pw"
-          placeholder="비밀번호"
-        />
-        <input
-          type="password"
-          class="input-box"
-          id="pw-check"
-          placeholder="비밀번호 확인"
-        />
-        <div class="error-message password-error"></div>
-
+        <div class="user-container">
+          <input type="text" class="input-box" id="major" placeholder="학과" />
+          <input type="text" class="input-box" id="name" placeholder="이름" />
+          <div class="error-message major-error"></div>
+          <div class="error-message name-error"></div>
+        </div>
+        <div class="pw-container">
+          <input
+            type="password"
+            class="input-box"
+            id="pw"
+            placeholder="비밀번호"
+          />
+          <input
+            type="password"
+            class="input-box"
+            id="pw-check"
+            placeholder="비밀번호 확인"
+          />
+          <div class="error-message password-error"></div>
+        </div>
         <button id="submit-button" class="submit-button">완료</button>
       </div>
     </div>
