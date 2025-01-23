@@ -75,7 +75,7 @@ transform: translate(-50%, -50%); /* 정확히 중앙에 위치시키기 위한 
 z-index: 10; /* add-btn이 clubPic 위로 보이게 */
 width: 200px; height: 90px; 
 background-color:#f7f7f7;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 border-radius: 10px;
 display: flex;
 flex-direction: column;

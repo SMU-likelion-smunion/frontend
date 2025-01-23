@@ -74,8 +74,6 @@ document.querySelector(".NewDept").addEventListener("click", function (e) {
   }
 });
 
-
-
 const deleteButtons = document.querySelectorAll('.deleteBtn');
 deleteButtons.forEach(button => {
   button.onclick = function () {
@@ -95,19 +93,38 @@ deleteButtons.forEach(button => {
     `;
     // body에 모달삽입
     document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+    const bodyElements = document.querySelectorAll("body *:not(.modal):not(.modal-overlay):not(.modal *)");
+    bodyElements.forEach(element => {
+      element.style.filter = `blur(1px) `;
+   
+    });
+  
+
     //확인버튼클릭
     const modal = document.querySelector('.modal-overlay');
     modal.querySelector('.confirm-delete').onclick = function () {
+
       const hrElement = parentDiv.previousElementSibling;
       if (hrElement && hrElement.tagName === 'HR') {
         hrElement.remove(); // <hr> 삭제
       }
       parentDiv.remove(); // 상위 div 삭제
       modal.remove(); // 모달 제거
+      //화면 흐림 멈춤
+      bodyElements.forEach(element => {
+        element.style.filter = ``;
+      });
+
     };
     // 취소버튼클릭
     modal.querySelector('.cancel-delete').onclick = function () {
       modal.remove(); // 모달 제거
+     // 화면흐림 멈춤
+     bodyElements.forEach(element => {
+      element.style.filter = ``;
+    });
+
     };
   };
 });
