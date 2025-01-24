@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // }
 
   // 초기화: 상태 정리 및 로그인 상태 확인
-  var accessToken = getCookie("accessToken");
+  const accessToken = getCookie("accessToken");
 
   if (accessToken) {
     // 이미 로그인된 경우 홈 페이지로 리디렉션
@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // 쿠키에 저장
         setCookie("accessToken", accessToken, 1);
         setCookie("refreshToken", refreshToken, 1);
-        alert(accessToken);
         window.location.replace("home.html");
       })
       .catch((error) => {
